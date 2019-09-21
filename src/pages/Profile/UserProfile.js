@@ -14,11 +14,9 @@ const DATA = {
 class UserProfile extends  React.Component {
     render() {
         return (
-            <div style={{padding:'15px'}}>
-            <Profile
-                name={this.props.myData.name}
-                imgURL={this.props.myData.imgUrl}
-            />
+            <div>
+            <NavBar />
+            <Profile/>
             <Params />
             </div>
         );
@@ -30,8 +28,8 @@ class Profile extends React.Component {
     render() {
         return (
             <div>
-                <h1>{this.props.name}</h1>
-                <img src={this.props.name}/>
+                <h1>Holy</h1>
+                <img src="https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"/>
             </div>
         );
     }
@@ -41,7 +39,6 @@ class Params extends React.Component {
     render() {
         return (
             <div>
-            <NavBar />
                 <h3>
                     Mes Statistiques
                 </h3>
