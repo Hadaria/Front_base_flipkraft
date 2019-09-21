@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(
-    <BrowserRouter basename={"/tf-jsx-demo/rosy/"}>
+    <BrowserRouter basename={"/flipkraft/"}>
         <Route path="/" component={App} />
     </BrowserRouter>,
     document.getElementById("root")

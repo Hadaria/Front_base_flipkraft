@@ -175,7 +175,7 @@ class NavBar extends Component {
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Link
+                                    <NavLink
                                         activeclass="active"
                                         to="/editeur"
                                         spy={true}
@@ -185,8 +185,8 @@ class NavBar extends Component {
                                         className="nav-link"
                                         onClick={this.closeNavbar}
                                     >
-                                        Editeur (à venir)
-                                    </Link>
+                                        Editeur
+                                    </NavLink>
                                 </Nav.Item>
 
                                 <Nav.Item>

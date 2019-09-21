@@ -1,20 +1,23 @@
 import React from "react";
 import Unity, { UnityContent } from "react-unity-webgl";
+import NavBar from "../../components/NavBar";
+import {HashRouter as Router, NavLink} from "react-router-dom";
+
 
 export class Editeur extends React.Component {
   constructor(props) {
     super(props);
 
     this.unityContent = new UnityContent(
-      "../../../public/editor/static/unity_files/BuildDelivery.json",
-      "../../../public/editor/static/unity_files/UnityLoader.js"
+      "/editor/static/unity_files/BuildDelivery.json",
+      "/editor/static/unity_files/UnityLoader.js"
     );
   }
 
   render() {
       return (
-          <div>
-            <h1> je suis l'Editeur </h1>
+          <div style={{backgroundColor: 'black'}}>
+            <NavBar />
             <Unity unityContent={this.unityContent}/>
         </div>
       );

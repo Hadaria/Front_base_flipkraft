@@ -8,7 +8,6 @@ import './Sign.css';
 import Footer from "../../components/Footer";
 import NavBar from "../../components/NavBar";
 
-
 class Sign extends Component {
   render() {
     return (

@@ -28,6 +28,7 @@ import SignInForm from "./pages/Sign/pages/SignInForm";
 import SignUpForm from "./pages/Sign/pages/SignUpForm";
 import Unity, {UnityContent} from "react-unity-webgl";
 import {Editeur} from "./pages/Editeur/Editeur";
+import UserProfile from "./pages/Profile/UserProfile";
 
 class App extends Component {
     render() {
@@ -52,6 +53,10 @@ class App extends Component {
                                             <Route
                                                 path="/editeur"
                                                 component={Editeur}
+                                            />
+                                            <Route
+                                                path="/forumusers"
+                                                component={UserProfile}
                                             />
                                             <Route
                                                 path="/blog-details"
