@@ -58,18 +58,18 @@ About.defaultProps = {
         aboutsData: [
         {
             Icon: "icofont-unique-idea",
-            title: "Titre 1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            title: "La créativité",
+            content: "Notre volonté est de permettre à tout le monde de créer leur propre jeu, avec des outils simples à prendre en main et sans limites !",
         },
         {
             Icon: "icofont-users-social",
-            title: "Titre 2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            title: "L'interactivité",
+            content: "Notre volontée est d'être toujours à l'écoute de nos utilisateurs, afin de pouvoir vous proposer le meilleur système possible",
         },
         {
-            Icon: "icofont-money",
-            title: "Titre 3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            Icon: "icofont-flag-alt-2",
+            title: "Le challenge",
+            content: "Les jeux de cartes ont toujours été un vecteur de défi, de challenge. Nous voulons continuer a véhiculer ces idées et permettre à tout le monde de s'épanouir par le jeu",
         },
     ]
 };

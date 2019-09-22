@@ -16,9 +16,6 @@ class Team extends Component {
                     <h3 className="title">{team.Name}</h3>
                     <span className="post">{team.Profession}</span>
                     <ul className="icon">
-                        <li><Link to={team.facebookLink}><Icofont icon="icofont-facebook" /></Link></li>
-                        <li><Link to={team.linkedinLink}><Icofont icon="icofont-linkedin" /></Link></li>
-                        <li><Link to={team.twitterLink}><Icofont icon="icofont-twitter" /></Link></li>
                     </ul>
                 </div>
             </div>
@@ -87,31 +84,57 @@ Team.defaultProps = {
     SectionbgTitle: "Team",
     sectionTitle: "L'équipe de FlipKraft",
     sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+        "Voici une petite présentation de l'équipe composant Flipkraft !",
         teamsData: [
         {
             Image: require("../assets/img/team-one.jpg"),
             Name: "Thomas Bouillon",
-            Profession: "Team Leader",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
+            Profession: "Chef d'équipe",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Robin Partouche",
+            Profession: "API",
         },
         {
             Image: require("../assets/img/team-two.jpg"),
             Name: "Etienne Fernandez",
-            Profession: "Editor Creator",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
+            Profession: "Editeur",
         },
         {
             Image: require("../assets/img/team-two.jpg"),
             Name: "Dante Grossi",
-            Profession: "API Manager",
-            facebookLink: "/#0",
-            linkedinLink: "/#0",
-            twitterLink: "/#0",
+            Profession: "API",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Alassane Fall",
+            Profession: "Serveur",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Samy Aitouakli",
+            Profession: "Unity",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Nicolas Tsolissos",
+            Profession: "API",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Mewen Lereste",
+            Profession: "Serveur",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Lourdvic Alcindor",
+            Profession: "Site Web",
+        },
+        {
+            Image: require("../assets/img/team-two.jpg"),
+            Name: "Arthur Grotzky",
+            Profession: "Site Web",
         },
         
     ]
