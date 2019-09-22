@@ -30,7 +30,8 @@
     "react-scroll-up-button": "^1.6.4",
     "react-transition-group": "^2.6.0",
     "react-unity-webgl": "^7.1.7",
-    "react-visibility-sensor": "^5.0.2"
+    "react-visibility-sensor": "^5.0.2",
+    "redux-auth-wrapper": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
