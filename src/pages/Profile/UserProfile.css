@@ -1,0 +1,17 @@
+.Profil {
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+.Profil__Aside {
+  width: 50%;
+  background-color: #c84a17;
+}
+
+.Profil__Form {
+  width: 50%;
+  background-color: #1d1d1d;
+  padding: 25px 40px;
+  overflow: auto;
+}

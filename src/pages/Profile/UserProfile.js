@@ -15,10 +15,14 @@ import {UserAuthWrapper} from 'redux-auth-wrapper';
 class UserProfile extends  React.Component {
     render() {
         return (
-            <div>
+            <div classname="Sign">
                 <NavBar />
-                <Profil profil={{name: "Holy", imgUrl:"https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"}}/>
-                <Params params={{topics: "42", posts: "142", date:"15 Septembre 2012"}}/>
+                <div className="Sign__Aside">
+                    <div className="Sign__Form">
+                        <Profil profil={{name: "Holy", imgUrl:"https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"}}/>
+                        <Params params={{topics: "42", posts: "142", date:"15 Septembre 2012"}}/>
+                    </div>
+                </div>
             </div>
         );
     }
