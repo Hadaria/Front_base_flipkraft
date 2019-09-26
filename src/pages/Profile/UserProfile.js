@@ -1,9 +1,12 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
+import User from "../../components/User";
+import axios from 'axios';
 import {HashRouter as Router} from "react-router-dom";
 import {UserAuthWrapper} from 'redux-auth-wrapper';
 import {forEach} from "react-bootstrap/utils/ElementChildren";
 import {func} from "prop-types";
+
 
 //redirect to login by default
 /*const UserIsAuthenticated = UserAuthWrapper({
@@ -15,6 +18,7 @@ import {func} from "prop-types";
 */
 
 class UserProfile extends  React.Component {
+
     constructor() {
         super()
         this.state = {
@@ -34,10 +38,12 @@ class UserProfile extends  React.Component {
                 })
             })
     }
+
     render() {
         return (
             <div>
                 <NavBar />
+
                 <div className="Sign">
                     <div className="Sign__Aside">
                         <div className="Sign__Form">
@@ -47,12 +53,14 @@ class UserProfile extends  React.Component {
                         </div>
                     </div>
                 </div>
+
             </div>
 
         );
     }
 }
 export default UserProfile
+
 
 function Profil(props) {
     return (

@@ -28,7 +28,7 @@ class HomeOne extends Component {
             {/* Blog: src/components/Blog.jsx */}
             <Blog />
             {/* VideoArea: src/components/VideoArea.jsx */}
-            <VideoArea />
+            {/*<VideoArea />*/}
             {/* Contact: src/components/Contact.jsx */}
             <Contact />
             {/* Footer: src/components/Footer.jsx */}

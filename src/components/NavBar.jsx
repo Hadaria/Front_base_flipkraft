@@ -189,7 +189,7 @@ class NavBar extends Component {
                                     </NavLink>
                                 </Nav.Item>
 
-                                <Nav.Item>
+                                {/*<Nav.Item>
                                     <Link
                                         activeclass="active"
                                         to="video-area"
@@ -202,7 +202,7 @@ class NavBar extends Component {
                                     >
                                         Video
                                     </Link>
-                                </Nav.Item>
+                                </Nav.Item>*/}
 
                                 <Nav.Item>
                                     <Link
@@ -236,77 +236,7 @@ class NavBar extends Component {
                                         className="nav-link"
                                         activeClassName=""
                                     >
-                                        Home
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Services
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Works
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        About
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Team
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Blog
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Video
-                                    </NavLink>
-                                </Nav.Item>
-
-                                <Nav.Item>
-                                    <NavLink
-                                        to="/"
-                                        className="nav-link"
-                                        activeClassName=""
-                                    >
-                                        Contact
+                                        Page d'accueil
                                     </NavLink>
                                 </Nav.Item>
                                 <Nav.Item>

@@ -56,44 +56,26 @@ Services.defaultProps = {
     SectionbgTitle: "Services",
     sectionTitle: "Services",
     sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+        "Voici les différentes fonctionnalités que Flipkraft vous propose : ",
 
     servicesData: [
         {
             icon: "icofont-automation",
-            heading: "Titre 1",
+            heading: "Un système facile à prendre en main",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
+                "Notre programme vous permettra de faire vos premières parties très rapidement, le tout de manière extrêmement simple, peu importe l'endroit ou vous vous trouvez !"
         },
         {
-            icon: "icofont-bullseye",
-            heading: "Titre 2",
+            icon: "icofont-beaker",
+            heading: "Un éditeur pour expérimenter vos idées de jeu",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
+                "Avec notre éditeur, vous pouvez littéralement créer le jeu qui vous ressemble ! Le tout de facon simple et ergonomique, en pouvant par la suite le partager !"
         },
         {
-            icon: "icofont-woman-in-glasses",
-            heading: "Titre 3",
+            icon: "icofont-chat",
+            heading: "Une équipe présente et à l'écoute",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
-        },
-        {
-            icon: "icofont-chart-growth",
-            heading: "Titre 4",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
-        },
-        {
-            icon: "icofont-network-tower",
-            heading: "Titre 5",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
-        },
-        {
-            icon: "icofont-laptop-alt",
-            heading: "Titre 6",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet."
+                "Avec les news, vous êtes constamment informés des mise à jour de Flipkraft, et vous pouvez contacter l'équipe à tout moment via le formulaire mis à votre disposition"
         },
     ]
 };

@@ -69,6 +69,10 @@ class App extends Component {
                                                 component={SignUPPost}
                                             />
                                             <Route
+                                                path="/me"
+                                                component={User}
+                                            />
+                                            <Route
                                                 path="/blog-details"
                                                 component={SingleBlog}
                                             />

@@ -19,8 +19,6 @@ class Footer extends Component {
                                         <li>{this.props.socialTitle} </li>
                                         <li><Link to={this.props.FacebookLink}><Icofont icon="icofont-facebook"/></Link></li>
                                         <li><Link to={this.props.TwitterLink}><Icofont icon="icofont-twitter"/></Link></li>
-                                        <li><Link to={this.props.InstagramLink}><Icofont icon="icofont-instagram"/></Link></li>
-                                        <li><Link to={this.props.linkedinLink}><Icofont icon="icofont-linkedin"/></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -36,17 +34,13 @@ Footer.propTypes = {
     copyrightText: PropTypes.string,
     FacebookLink: PropTypes.string,
     TwitterLink: PropTypes.string,
-    InstagramLink: PropTypes.string,
-    linkedinLink: PropTypes.string,
 };
 
 //Default Props
 Footer.defaultProps = {
     copyrightText: "2019 © All Rights Reserved.",
-    socialTitle: "Follow Us On:",
-    FacebookLink: "/#0",
-    TwitterLink: "/#0",
-    InstagramLink: "/#0",
-    linkedinLink: "/#0",
+    socialTitle: "Suivez-nous sur :",
+    FacebookLink: "//facebook.com/FlipKraftGame",
+    TwitterLink: "//twitter.com/FlipKraft",
 };
 export default Footer;

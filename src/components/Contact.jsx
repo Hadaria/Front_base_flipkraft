@@ -20,7 +20,7 @@ class Contact extends Component {
     handleForm = e => {
         let that = this;
         axios
-            .post("https://formcarry.com/s/qJalZsYuqY-", this.state, {
+            .post("https://formcarry.com/s/wkXi5WJN_6Q", this.state, {
                 headers: { Accept: "application/json" }
             })
             .then(function(response) {
@@ -193,23 +193,17 @@ Contact.propTypes = {
     sectionTitle: PropTypes.string,
     sectionDescription: PropTypes.string,
     AddTitle: PropTypes.string,
-    Address: PropTypes.string,
     EmailTitle: PropTypes.string,
-    Email: PropTypes.string,
     PhoneTitle: PropTypes.string,
-    Phone: PropTypes.string,
 };
 
 //Default Props
 Contact.defaultProps = {
     SectionbgTitle: "Contact",
-    sectionTitle: "Our Contact",
-    sectionDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+    sectionTitle: "Nous contacter",
+    sectionDescription: "Si vous avez des remarques, des questions, ou que vous voulez juste nous encourager, n'hésitez pas à utiliser ce formulaire de contact !",
     AddTitle: "Address",
-    Address: "2750 Quadra Street Victoria, Canada.",
     EmailTitle: "Email",
-    Email: "roxy@gmail.com",
     PhoneTitle: "Phone",
-    Phone: "+1-325-555-0156",
 };
 export default Contact;
