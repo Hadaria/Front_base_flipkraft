@@ -87,37 +87,37 @@ Team.defaultProps = {
         "Voici une petite présentation de l'équipe composant Flipkraft !",
         teamsData: [
         {
-            Image: require("../assets/img/team-one.jpg"),
+            Image: require("../assets/img/photo_thomas.jpg"),
             Name: "Thomas Bouillon",
             Profession: "Chef d'équipe",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_robin.jpg"),
             Name: "Robin Partouche",
             Profession: "API",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_étienne.jpg"),
             Name: "Etienne Fernandez",
             Profession: "Editeur",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_dante.jpg"),
             Name: "Dante Grossi",
             Profession: "API",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_alassane.jpg"),
             Name: "Alassane Fall",
             Profession: "Serveur",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_samy.jpg"),
             Name: "Samy Aitouakli",
             Profession: "Unity",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_tsolissos.jpg"),
             Name: "Nicolas Tsolissos",
             Profession: "API",
         },
@@ -127,12 +127,12 @@ Team.defaultProps = {
             Profession: "Serveur",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_lourdvik.jpg"),
             Name: "Lourdvic Alcindor",
             Profession: "Site Web",
         },
         {
-            Image: require("../assets/img/team-two.jpg"),
+            Image: require("../assets/img/photo_arthur.jpg"),
             Name: "Arthur Grotzky",
             Profession: "Site Web",
         },
