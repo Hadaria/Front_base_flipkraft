@@ -65,8 +65,6 @@ class BlogOne extends Component {
                         <ul className="pagination">
                             <li><Link to="/#0"><Icofont icon="icofont-simple-left" /> Prev</Link></li>
                             <li className="active"><Link to="/#0">1</Link></li>
-                            <li><Link to="/#0">2</Link></li>
-                            <li><Link to="/#0">3</Link></li>
                             <li><Link to="/#0">Next <Icofont icon="icofont-simple-right" /></Link></li>
                         </ul>
                     </div>
@@ -90,92 +88,21 @@ BlogOne.propTypes = {
 
 //Default Props
 BlogOne.defaultProps = {
-    Title: "Our Blog",
-    Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+    Title: "Bienvenue dans la section News de Flipkraft",
+    Content: "Nous vous communiquerons les différentes évolutions du site ainsi que les informations importantes par le biais de cette section, n'hésitez pas à y revenir régulièrement !",
     blogonesData: [
         {
             postImage: require("../assets/img/blog-one.jpg"),
             postLink: "/blog-details",
-            date: "25",
-            month: "Feb",
-            posttitle: "Risus commodo viverra mae.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
+            date: "22",
+            month: "Sep",
+            posttitle: "L'endroit de toute la communication de l'équipe",
+            postContent: "Nous vous communiquerons les différentes évolutions du site ainsi que les informations importantes par le biais de cette section, n'hésitez pas à y revenir régulièrement !",
+            authorName: "Thomas",
             authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
-        },
-        {
-            postImage: require("../assets/img/blog-two.jpg"),
-            postLink: "/blog-details",
-            date: "10",
-            month: "Feb",
-            posttitle: "Best way to learn java.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
-            authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
-        },
-        {
-            postImage: require("../assets/img/blog-three.jpg"),
-            postLink: "/blog-details",
-            date: "30",
-            month: "Jan",
-            posttitle: "14 ridiculously cool websites.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
-            authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
-        },
-        {
-            postImage: require("../assets/img/blog-one.jpg"),
-            postLink: "/blog-details",
-            date: "25",
-            month: "Feb",
-            posttitle: "How to build a programming career.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
-            authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
-        },
-        {
-            postImage: require("../assets/img/blog-two.jpg"),
-            postLink: "/blog-details",
-            date: "10",
-            month: "Feb",
-            posttitle: "10 hot marketing trends you need.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
-            authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
-        },
-        {
-            postImage: require("../assets/img/blog-three.jpg"),
-            postLink: "/blog-details",
-            date: "30",
-            month: "Jan",
-            posttitle: "Best programming language to learn.",
-            postContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum sagittis nulla, non vehicula mauris rutrum vitae. Sed non consequat dolor. Cras in odio augue.",
-            authorName: "Jone",
-            authorLink: "#",
-            TotalComments: "06",
-            CommentsLink: "#",
-            TagName: "lifestyle",
-            TagLink: "#", 
+            TotalComments: "00",
+            TagName: "Information",
+            TagLink: "#",
         },
     ]
 };
