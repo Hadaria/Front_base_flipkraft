@@ -881,7 +881,7 @@ Services Area CSS
 .team-box:after{
     content: "";
     display: block;
-    border: 10px solid rgba(255, 255, 255, 0.7);
+    border: 10px solid rgba(200, 74, 23, 0.7);
     position: absolute;
     top: 35px;
     left: 35px;
@@ -916,7 +916,7 @@ Services Area CSS
 .team-box .box-content{
     padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #c84a17;
     position: absolute;
     top: 45px;
     left: 45px;
