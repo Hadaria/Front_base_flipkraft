@@ -7,7 +7,6 @@ import {UserAuthWrapper} from 'redux-auth-wrapper';
 import {forEach} from "react-bootstrap/utils/ElementChildren";
 import {func} from "prop-types";
 
-
 //redirect to login by default
 /*const UserIsAuthenticated = UserAuthWrapper({
     authSelector: state => state.auth, //how to get the user state
@@ -18,7 +17,6 @@ import {func} from "prop-types";
 */
 
 class UserProfile extends  React.Component {
-
     constructor() {
         super()
         this.state = {
