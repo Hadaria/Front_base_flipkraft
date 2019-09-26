@@ -1,10 +1,11 @@
-import React, { Component, PropsTypes} from "react";
+import React from "react";
 import NavBar from "../../components/NavBar";
 import User from "../../components/User";
 import axios from 'axios';
 import {HashRouter as Router} from "react-router-dom";
 import {UserAuthWrapper} from 'redux-auth-wrapper';
-import PropTypes from "prop-types";
+import {forEach} from "react-bootstrap/utils/ElementChildren";
+import {func} from "prop-types";
 
 
 //redirect to login by default
@@ -18,17 +19,24 @@ import PropTypes from "prop-types";
 
 class UserProfile extends  React.Component {
 
+    constructor() {
+        super()
+        this.state = {
+            loading: false,
+            users: []
+
+        }
+    }
     componentDidMount() {
-        // We're using axios instead of Fetch
-        //axios
-        // The API we're requesting data from
-        axios.get("test.flipkraft.ovh/api/me")
-            .then(function (response) {
-                console.log(response);
+        this.setState({loading: true})
+        fetch("http://test.flipkraft.ovh/api/user")
+            .then(response => response.json())
+            .then(response => {
+                this.setState({
+                    loading: false,
+                    users: response
+                })
             })
-            .catch(function (error) {
-                console.log(error);
-            });
     }
 
     render() {
@@ -36,10 +44,18 @@ class UserProfile extends  React.Component {
             <div>
                 <NavBar />
 
+                <div className="Sign">
+                    <div className="Sign__Aside">
+                        <div className="Sign__Form">
+                            <Profil profil={{name: "Holy", imgUrl:"https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"}}/>
+                               
+                            <Params params={{topics: "42", posts: "142", date:"15 Septembre 2012"}}/>
+                        </div>
+                    </div>
+                </div>
 
-                <Profil profil={{name: "Holy", imgUrl:"https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"}}/>
-                <Params params={{topics: "42", posts: "142", date:"15 Septembre 2012"}}/>
             </div>
+
         );
     }
 }
@@ -68,3 +84,4 @@ function Params(props) {
         </div>
     )
 }
+

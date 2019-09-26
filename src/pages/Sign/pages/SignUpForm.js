@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 class SignUpForm extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
-            number: '',
+            username: '',
             email: '',
+            phone_number: '',
             password: '',
-            name: '',
             hasAgreed: false
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(e) {
@@ -22,37 +22,66 @@ class SignUpForm extends Component {
         let value = target.type === 'checkbox' ? target.checked : target.value;
         let name = target.name;
 
-        this.setState({
-          [name]: value
-        });
+        this.setState({[e.target.name]: e.target.value})
+
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
-
-        console.log('The form was submitted with the following data:');
-        console.log(this.state);
+    submitHandler = e => {
+        e.preventDefault()
+        console.log(this.state)
+        axios.post("http://test.flipkraft.ovh/api/user", this.state)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log("ErrorHTTP:", error)
+            })
     }
 
     render() {
+        const { username, email, phone_number, password } = this.state
         return (
         <div className="FormCenter">
-            <form onSubmit={this.handleSubmit} className="FormFields">
+            <form onSubmit={this.submitHandler} className="FormFields">
               <div className="FormField">
-                <label className="FormField__Label" htmlFor="name">Nom Complet</label>
-                <input type="text" id="name" className="FormField__Input" placeholder="Entrer votre nom complet" name="name" value={this.state.name} onChange={this.handleChange} />
+                <label className="FormField__Label" htmlFor="username">Identifiant</label>
+                <input type="text"
+                       id="username"
+                       className="FormField__Input"
+                       placeholder="Entrer votre pseudo"
+                       name="username"
+                       value={username}
+                       onChange={this.handleChange} />
               </div>
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="password">Mot de Passe</label>
-                <input type="password" id="password" className="FormField__Input" placeholder="Entrer votre mot de passe" name="password" value={this.state.password} onChange={this.handleChange} />
+                <input type="password"
+                       id="password"
+                       className="FormField__Input"
+                       placeholder="Entrer votre mot de passe"
+                       name="password"
+                       value={password}
+                       onChange={this.handleChange} />
               </div>
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="email">Addresse E-mail</label>
-                <input type="email" id="email" className="FormField__Input" placeholder="Entrer votre e-mail" name="email" value={this.state.email} onChange={this.handleChange} />
+                <input type="email"
+                       id="email"
+                       className="FormField__Input"
+                       placeholder="Entrer votre e-mail"
+                       name="email"
+                       value={email}
+                       onChange={this.handleChange} />
               </div>
               <div className="FormField">
                 <label className="FormField__Label" htmlFor="number">Numéro de téléphone</label>
-                <input type="number" id="number" className="FormField__Input" placeholder="Entrer votre numéro de téléphone" name="number" value={this.state.number} onChange={this.handleChange} />
+                <input type="number"
+                       id="number"
+                       className="FormField__Input"
+                       placeholder="Entrer votre numéro de téléphone"
+                       name="phone_number"
+                       value={phone_number}
+                       onChange={this.handleChange} />
               </div>
 
               <div className="FormField">

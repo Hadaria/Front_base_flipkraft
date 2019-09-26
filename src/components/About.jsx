@@ -54,7 +54,7 @@ About.defaultProps = {
     SectionbgTitle: "About",
     sectionTitle: "Nos Vecteur",
     sectionDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet.",
+        "Voici les principales idées motrices derrière le projet Flipkraft et qui animent chaque membres de l'équipe !",
         aboutsData: [
         {
             Icon: "icofont-unique-idea",
