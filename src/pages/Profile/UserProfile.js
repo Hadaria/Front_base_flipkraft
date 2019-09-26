@@ -42,13 +42,7 @@ class UserProfile extends  React.Component {
                     <div className="Sign__Aside">
                         <div className="Sign__Form">
                             <Profil profil={{name: "Holy", imgUrl:"https://cdn4.vectorstock.com/i/thumb-large/70/33/avatar-hacker-man-vector-10607033.jpg"}}/>
-                                {this.state.users.map(function (item, index) {
-                                    return (
-                                        <div key={index}>
-                                            <h1>{item.username}</h1>
-                                        </div>
-                                    )
-                                })}
+                               
                             <Params params={{topics: "42", posts: "142", date:"15 Septembre 2012"}}/>
                         </div>
                     </div>
