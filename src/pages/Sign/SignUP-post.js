@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import axios from 'axios'
 
 class SignUPPost extends Component {
@@ -7,6 +7,7 @@ class SignUPPost extends Component {
 
         this.state = {
             username: '',
+            usernameOk: false,
             email: '',
             phone_number: '',
             password: ''
@@ -14,7 +15,16 @@ class SignUPPost extends Component {
     }
 
     changeHandler = (e) => {
-        this.setState({[e.target.name]: e.target.value})
+        if (e.target.value !== "")
+            this.setState({
+                [e.target.name]: e.target.value,
+                usernameOk: true
+            })
+        else
+            this.setState({
+                [e.target.name]: e.target.value,
+                usernameOk: false
+            })
     }
 
     submitHandler = e => {
@@ -28,8 +38,9 @@ class SignUPPost extends Component {
                 console.log("ErrorHTTP:", error)
             })
     }
+
     render() {
-        const { username, email, phone_number, password } = this.state
+        const {username, email, phone_number, password} = this.state
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
@@ -37,7 +48,7 @@ class SignUPPost extends Component {
                         <input
                             type="text"
                             name="username"
-                            value={username}
+                            value={this.state.username}
                             onChange={this.changeHandler}
                         />
                     </div>
@@ -64,10 +75,11 @@ class SignUPPost extends Component {
                             onChange={this.changeHandler}
                         />
                     </div>
-                    <button type="submit">Inscription</button>
+                    {this.state.usernameOk ? <button type="submit">Inscription</button> : null}
                 </form>
             </div>
         )
     }
 }
+
 export default SignUPPost
