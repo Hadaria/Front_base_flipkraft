@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Tabs, Tab } from "react-bootstrap";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import ItemOne from "../components/pricingItem/ItemOne";
-import ItemTwo from "../components/pricingItem/ItemTwo";
+import ItemOne from "./pricingItem/ItemOne";
+import ItemTwo from "./pricingItem/ItemTwo";
 
 export class Pricing extends Component {
     render() {
