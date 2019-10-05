@@ -1,85 +1,82 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
-class SignUPPost extends Component {
+class NewsCreatePost extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            username: '',
-            usernameOk: false,
-            email: '',
-            phone_number: '',
-            password: ''
+            title: '',
+            titleOk: '',
+            message: '',
+            description: ''
         }
+        this.changeHandler = this.changeHandler.bind(this);
     }
 
     changeHandler = (e) => {
         if (e.target.value !== "")
             this.setState({
                 [e.target.name]: e.target.value,
-                usernameOk: true
+                titleOk: true
             })
         else
             this.setState({
                 [e.target.name]: e.target.value,
-                usernameOk: false
+                titleOk: false
             })
     }
 
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
-        axios.post("http://test.flipkraft.ovh/api/user", this.state)
+        axios.post("http://test.flipkraft.ovh/api/news/create", this.state, {
+            auth: {
+                username: "holy_admin",
+                password: "G4NGdaeD"
+            }
+        })
             .then(response => {
                 console.log(response)
             })
             .catch(error => {
-                console.log("ErrorHTTP:", error)
+        console.log("Error HTTP:", error)
             })
     }
 
     render() {
-        const {username, email, phone_number, password} = this.state
+        const {title, message, description} = this.state
         return (
             <div>
                 <form onSubmit={this.submitHandler}>
                     <div>
                         <input
                             type="text"
-                            name="username"
-                            value={this.state.username}
+                            name="title"
+                            value={this.state.title}
                             onChange={this.changeHandler}
                         />
                     </div>
                     <div>
-                        <input type="email"
-                               name="email"
-                               value={email}
+                        <input type="text"
+                               name="message"
+                               value={this.state.message}
                                onChange={this.changeHandler}
                         />
                     </div>
                     <div>
                         <input
-                            type="number"
-                            name="phone_number"
-                            value={phone_number}
+                            type="text"
+                            name="description"
+                            value={this.state.description}
                             onChange={this.changeHandler}
                         />
                     </div>
-                    <div>
-                        <input
-                            type="password"
-                            name="password"
-                            value={password}
-                            onChange={this.changeHandler}
-                        />
-                    </div>
-                    {this.state.usernameOk ? <button type="submit">Inscription</button> : null}
+                    {this.state.titleOk ? <button type="submit">Poster un commentaire</button> : null}
                 </form>
-         +   </div>
+              </div>
         )
     }
 }
 
-export default SignUPPost
+export default NewsCreatePost

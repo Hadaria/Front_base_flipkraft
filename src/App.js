@@ -31,6 +31,7 @@ import {Editeur} from "./pages/Editeur/Editeur";
 import UserProfile from "./pages/Profile/UserProfile";
 import Log from "./pages/Editeur/Log";
 import SignUPPost from "./pages/Sign/SignUP-post";
+import NewsCreatePost from "./pages/Sign/pages/NewsCreatePost";
 
 class App extends Component {
     render() {
@@ -59,6 +60,10 @@ class App extends Component {
                                             <Route
                                                 path="/forumusers"
                                                 component={UserProfile}
+                                            />
+                                            <Route
+                                                path="/createnews"
+                                                component={NewsCreatePost}
                                             />
                                              <Route
                                                 path="/login"
