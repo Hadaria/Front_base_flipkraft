@@ -72,7 +72,7 @@ class NewsCreatePost extends Component {
                             onChange={this.changeHandler}
                         />
                     </div>
-                    {this.state.titleOk ? <button type="submit">Poster un commentaire</button> : null}
+                    {this.state.titleOk ? <button type="submit">Poster une NEWS :)</button> : null}
                 </form>
               </div>
         )
