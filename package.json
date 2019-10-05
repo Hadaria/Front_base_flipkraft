@@ -1,8 +1,8 @@
 {
-  "name": "react-rosy",
+  "name": "flipkraft",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/tf-jsx-demo/rosy/",
+  "homepage": "/flipkraft/",
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
